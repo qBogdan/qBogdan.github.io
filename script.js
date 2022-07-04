@@ -26,13 +26,3 @@ let age = 29;
 age = 22;
 
 console.log(age);
-
-const motto = document.getElementById('motto');
-motto.style.fontSize = '2rem';
-motto.style.color = "darkGreen"
-
-
-motto.innerText = "Hello World"
-
-console.log(motto);
-console.log(motto.innerText);
