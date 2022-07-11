@@ -26,3 +26,9 @@ let age = 29;
 age = 22;
 
 console.log(age);
+
+// git status
+// git add .
+// git commit -m "commentary"
+// git push
+// git pull
