@@ -1,0 +1,49 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+    background-color: slateblue;
+}
+
+#sideMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#sideMenu ul {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    list-style: none;
+}
+
+#sideMenu ul li {
+    display: flex;
+    height: 3rem;
+    align-items: center;
+}
+
+section {
+    height: 100vh;
+}
+
+#sideMenu ul li svg {
+    fill: rgb(34, 30, 30);
+    width: 3rem;
+    height: 3rem;
+    background-color: yellow;
+    border-radius: 50%;
+    padding: .5rem;
+
+}
+
+#sideMenu ul li span {
+    margin-left: 1rem;
+}
