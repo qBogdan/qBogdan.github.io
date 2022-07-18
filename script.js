@@ -15,18 +15,6 @@
     })
 })()
 
-console.error('help');
-console.warn('warn');
-console.debug('debug');
-console.info('info');
-console.log('log');
-
-const firstName = 'Bogdan';
-let age = 29;
-age = 22;
-
-console.log(age);
-
 // git status
 // git add .
 // git commit -m "commentary"
