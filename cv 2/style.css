@@ -9,6 +9,10 @@ body {
     background-color: slateblue;    
 }
 
+html::-webkit-scrollbar{
+    display: none;
+}
+
 #sideMenu {
     position: fixed;
 }
@@ -32,6 +36,10 @@ body {
 
 section {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 #sideMenu ul li svg {
@@ -75,19 +83,3 @@ section {
 }
 
 /* ----------*/
-
-#Home {
-    background-color: brown;
-}
-
-#Skills {
-    background-color: aquamarine;
-}
-
-#Projects {
-    background-color: darkcyan;
-}
-
-#Contact {
-    background-color: darkgoldenrod;
-}
