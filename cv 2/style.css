@@ -83,3 +83,76 @@ section {
 }
 
 /* ----------*/
+
+
+.container {
+    height: 90hv;
+    width: 60vw;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.picture {
+    margin: 0 2rem;
+}
+
+.picture img {
+    height: 8rem;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.about {
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.about h2 {
+    margin-bottom: 2rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+}
+
+/* ---------------- */
+
+#Skills h1 {
+    margin-bottom: 2rem;
+}
+
+#skillList li {
+    margin-bottom: 1rem;
+}
+#skillList li h2 {
+    margin-bottom: .5rem;
+}
+
+.skillPoint {
+    height: 1.2rem;
+    margin-right: .2rem;
+    aspect-ratio: 1;
+    border: 2px solid white;
+    border-radius: 50%;
+
+}
+
+.skillLvl {
+    display: flex;
+}
+
+.activePoint {
+    background-color: white;
+}
+
+#Skills .container {
+    display: flex;
+}
