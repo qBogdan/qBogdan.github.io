@@ -1,0 +1,22 @@
+[
+    {
+        "name": "HTML",
+        "lvl": 10,
+        "fav": false
+    },
+    {
+        "name": "CSS",
+        "lvl": 10,
+        "fav": true
+    },
+    {
+        "name": "JavaScript",
+        "lvl": 8,
+        "fav": true
+    },
+    {
+        "name": "React",
+        "lvl": 0,
+        "fav":false
+    }
+]

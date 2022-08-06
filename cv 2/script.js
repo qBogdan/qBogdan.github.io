@@ -33,46 +33,34 @@ window.addEventListener('scroll', (e) => {
 
 /* -------------------- */
 
-const skills = [
-    {
-        name: "HTML",
-        lvl: 10,
-    },
-    {
-        name: "CSS",
-        lvl: 10,
-    },
-    {
-        name: "JavaScript",
-        lvl: 8,
-    },
-    {
-        name: "React",
-        lvl: 0,
-    }
-]
+// fetch('skills.json')
+// .then((response) => response.json())
+// .then((result) => console.log(result));
 
-skills.forEach(skill => {
-    let li = document.createElement('li')
-    let h2 = document.createElement('h3')
-    let skillLvl = document.createElement('div');
-    skillLvl.classList.add('skillLvl')
+fetch('skills.json')
+    .then((response) => response.json())
+    .then((result) =>
+        result.sort((a, b) => b.fav ? 0 : a ? -1 : 1).forEach(skill => {
+            let li = document.createElement('li')
+            let h2 = document.createElement('h3')
+            let skillLvl = document.createElement('div');
+            skillLvl.classList.add('skillLvl')
 
-    h2.innerText = skill.name;
+            h2.innerText = skill.name;
 
-    for (let i = 0; i < 10; i++) {
-        let div = document.createElement('div');
-        div.classList.add('skillPoint');
-        skillLvl.append(div)
+            for (let i = 0; i < 10; i++) {
+                let div = document.createElement('div');
+                div.classList.add('skillPoint');
+                skillLvl.append(div)
 
-        if (i < skill.lvl) {
-            div.classList.add('activePoint')
-        }
-    }
+                if (i < skill.lvl) {
+                    div.classList.add('activePoint')
+                }
+            }
 
-    li.append(h2);
-    li.append(skillLvl);
+            li.append(h2);
+            li.append(skillLvl);
 
-    document.getElementById('skillList').append(li);
+            document.getElementById('skillList').append(li);
 
-})
+        }));

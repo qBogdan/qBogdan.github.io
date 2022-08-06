@@ -97,10 +97,15 @@ section {
 .profile {
     display: flex;
     align-items: center;
+    margin-bottom: 2rem;
+}
+
+.profile h1, .profile h2 {
+    margin: 0;
 }
 
 .picture {
-    margin: 0 2rem;
+    margin-right: 2rem;
 }
 
 .picture img {
@@ -111,28 +116,37 @@ section {
 
 .about {
     display: flex;
-    padding: 1rem;
-    margin: 1rem;
 }
 
-.about h2 {
+h2 {
     margin-bottom: 2rem;
 }
 
-.about p {
+p {
     font-size: 1.2rem;
+    margin-right: 1rem;
 }
 
 /* ---------------- */
 
-#Skills h1 {
-    margin-bottom: 2rem;
+.skillContainer {
+    margin-left: 2rem;
+    flex: 1;
+}
+
+.aboutSkills {
+    flex: 2;
+}
+
+h1 {
+    margin-bottom:2rem;
 }
 
 #skillList li {
     margin-bottom: 1rem;
+    list-style: none;
 }
-#skillList li h2 {
+#skillList li h3 {
     margin-bottom: .5rem;
 }
 
@@ -153,6 +167,12 @@ section {
     background-color: white;
 }
 
-#Skills .container {
+.wrapper {
     display: flex;
+}
+
+#Skills .container {
+    height: auto;
+    flex-direction: row;
+    align-items: center;
 }
